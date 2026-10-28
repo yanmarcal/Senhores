@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 18px; /* Garante no mínimo 18px para o corpo do texto */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-stone-50 text-slate-950 antialiased selection:bg-amber-300 selection:text-slate-950;
+  }
+}
